@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url("http://www.bizhi360.com/allimg/bpic/14/5314.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* 頂部設計 */
+        
+        header {
+            background-color: hsla(277, 82%, 4%, 0.8);
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            font-family: "DFKai-sb";
+        }
+        /* 邊欄 */
+        
+        nav {
+            float: left;
+            width: 15%;
+            height: 1000px;
+            /* only for demonstration, should be removed */
+            background: hsla(260, 18%, 93%, 0.6);
+            padding: 20px;
+            position: fixed;
+            left: 0px;
+        }
+        /* Style the list inside the menu */
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        /*內文*/
+        
+        article {
+            float: right;
+            padding: 100px;
+            width: 85%;
+            background-color: hsla(260, 18%, 93%, 0.8);
+        }
+        
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* 底部設計 */
+        
+        footer {
+            background-color: hsla(277, 82%, 4%, 0.6);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header>
+        <h2 id="top">夜柳的個人網頁</h2>
+    </header>
+
+    <section>
+        <nav>
+            <dl>
+                <dt><b>自我介紹</b></dt>
+                <dd><a href="#ziwo">簡介</a></dd>
+                <dt><b>歌曲欣賞</b></dt>
+                <dd><a href="#mei">玫瑰花的葬禮</a></dd>
+                <dd><a href="#ru">入夢局</a></dd>
+                <dd><a href="#pi">琵琶行</a></dd>
+                <dd><a href="#wo">我等你到三十五歲</a></dd>
+                <dd><a href="#nan">南山南</a></dd>
+                <dd><a href="#mo">默讀</a></dd>
+                <dt><b>小說推薦</b></dt>
+                <dd><a href="#dao">盜墓筆記</a></dd>
+                <dd><a href="#si">死亡萬花筒</a></dd>
+                <dd><a href="#quan">全職高手</a></dd>
+                <dt><a href="#top">回最上面</a></dt>
+            </dl>
+        </nav>
+
+        <article>
+            <h1>歡迎大家來到我的網頁~我會在這裡分享一些心情日誌，大家有興趣的話可以常來逛逛呦~</h1>
+            <img src="https://static.newmobilelife.com/wp-content/uploads/2014/12/LINE03.png">
+            <h1 id="ziwo"><a href="#">簡介</a> </h1>
+            <h1>姓名:黃羽溱</h1>
+            <h1>性別:女</h1>
+            <h1>興趣:聽歌、玩遊戲、看小說</h1>
+            <h1>喜歡的歌曲類型:古風</h1>
+            <h1>喜歡玩的遊戲:王者榮耀、和平精英</h1>
+            <h1>喜歡看的小說類型:玄幻、恐怖</h1>
+            <h1>就讀學校:國立金門大學</h1>
+            <h1>科系:資訊工程學系</h1>
+            <h1>信箱:zxczxczxcasdbrian123@gmail.com</h1>
+            <h1 id="mei"><a href="https://www.youtube.com/watch?v=p0bFIURj4-k&list=RDp0bFIURj4-k&index=1">玫瑰花的葬禮</a></h1>
+            <p>作曲:李毅傑</p>
+            <p>作詞：許嵩、李毅傑 </p>
+            <p>演唱：許嵩</p>
+            <p>翻唱：西瓜JUN</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/p0bFIURj4-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>很喜歡它的旋律，感覺很洗腦，歌詞則感覺是失戀或愛人出意外後的產物，有點哀傷的氣氛。</p>
+            <h1 id="ru"><a href="https://www.youtube.com/watch?v=2mKdM-dkFaw&list=RDp0bFIURj4-k&index=6">入夢局</a></h1>
+            <p>作曲:潮汐</p>
+            <p>作詞:无比 </p>
+            <p>编曲:灰原穷</p>
+            <p>演唱:許嵩</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2mKdM-dkFaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>一首很喜歡的盜墓筆記角色曲，曲調好聽，詞也幽美，尤其是中間戲腔的部分讓我對它印象深刻</p>
+            <p>"冷眼十殿閻羅，笑看人間離合，良辰美景虛設，甘願重蹈覆轍，可嘆一世崢嶸，不見有與君同，唱遍山水萬重，唯獨一枝解語最傾城"
+            </p>
+            <p>更是把小說裡此人物的小說裡此人物的心情描繪得淋漓盡致。</p>
+            <h1 id="pi"><a href=https://www.youtube.com/watch?v=GteGCSuj_4A&list=RDp0bFIURj4-k&index=7>琵琶行</a></h1>
+            <p>作曲、编曲:徒有琴</p>
+            <p>作詞:白居易 </p>
+            <p>原唱：奇然、沈謐仁</p>
+            <p>翻唱：河伯</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GteGCSuj_4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>這是古詩詞改編中少數讓我覺得好聽的歌曲之一，去年重複循環到讓我把整首琵琶行都記起來了。</p>
+            <h1 id="wo"><a href=https://www.youtube.com/watch?v=g3NXcBmLZgw>我等你到三十五歲</a></h1>
+            <p>原曲：風聲</p>
+            <p>後期：喵汪 </p>
+            <p>翻唱：晃兒</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g3NXcBmLZgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>一首詞很壓抑、聽了讓我想哭的歌...歌的故事就是說有一對讀大學的男同性戀情侶，其中一人因為承受不住家裡和社會</p>
+            <p>給他的壓力而找了一名女性結婚了，可另一人卻始終相信他會回來找自己，並說自己願意等他到三十五歲，然而最後卻疑似因</p>
+            <p>得了抑鬱症，28歲時投江自殺了，並留下了這麼一句話: </p>
+            <p> "這樣，我就能一直等著你了吧"</p>
+            <h1 id="nan"><a href="https://www.youtube.com/watch?v=oAyCoN5x0lw">南山南</a></h1>
+            <p>作曲: 馬頔</p>
+            <p>作詞：馬頔 </p>
+            <p>演唱：馬頔</p>
+            <p>翻唱：排骨教主</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oAyCoN5x0lw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>一首旋律柔和的歌，從旋律完全聽不出說的是異地戀時因男方患了絕症而與女方分手的歌曲</p>
+            <P>之前只看歌詞時不了解背後的故事，後來去查了下才覺得詞寫得真好，每一句話都有他的原因</P>
+            <p>不只是為了湊字數而填的詞。</p>
+            <h1 id="mo"><a href="https://www.youtube.com/watch?v=F4fVRbVBON4">默讀</a></h1>
+            <p>作曲:張燕峰</p>
+            <p>作詞：一隻然/李嘉舜 </p>
+            <p>演唱：任然</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F4fVRbVBON4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>輕柔的女生配上甜甜的歌詞，聽著感覺自己回到了熱戀期。</p>
+            <h1 id="dao"><a href="http://www.daomubiji.org/">盜墓筆記</a></h1>
+            <img src="https://i.ytimg.com/vi/5WGQsWSn-2k/maxresdefault.jpg" style="width:800px;height:400px;">
+            <p>作者:南派三叔</p>
+            <p>盜筆永遠是我心中的白月光，能反覆閱讀而不厭倦。</p>
+            <h1 id="si"><a href="https://www.sto.cx/book-172375-1.html">死亡萬花筒</a></h1>
+            <img src="https://images.plurk.com/1BoQIMPYD2jd4FQcNpyMxP.jpg" style="width:800px;height:400px;">
+            <p>作者:西子緒</p>
+            <p>第一本看的無限流小說，兩位男主間的互動深深吸引到了我，比起其他千篇一律的言情文好看多了。</p>
+            <h1 id="quan">全職高手</h1>
+            <img src="https://i.kfs.io/album/global/59908491,0v1/fit/500x500.jpg" style="width:400px;height:500px;">
+            <p>作者:蝴蝶藍</p>
+            <p>最喜歡的網遊文!裡面男主超帥，尤其特別喜歡他嘲諷別人的樣子。</p>
+        </article>
+    </section>
+
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+
+</html>

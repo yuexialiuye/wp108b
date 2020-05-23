@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url("http://www.bizhi360.com/allimg/bpic/14/5314.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Style the header */
+        
+        header {
+            background-color: hsla(277, 82%, 4%, 0.8);
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            font-family: "DFKai-sb";
+        }
+        /* Create two columns/boxes that floats next to each other */
+        
+        nav {
+            float: left;
+            width: 15%;
+            height: 700px;
+            /* only for demonstration, should be removed */
+            background: hsla(260, 18%, 93%, 0.6);
+            padding: 20px;
+        }
+        /* Style the list inside the menu */
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            float: left;
+            padding: 100px;
+            width: 85%;
+            background-color: hsla(260, 18%, 93%, 0.8);
+            height: 700px;
+            /* only for demonstration, should be removed */
+        }
+        /* Clear floats after the columns */
+        
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Style the footer */
+        
+        footer {
+            background-color: hsla(277, 82%, 4%, 0.6);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header>
+        <h2>夜柳的個人網頁</h2>
+    </header>
+
+    <section>
+        <nav>
+            <dl>
+                <dt><b>自我介紹</b></dt>
+                <dd><a href="#">簡介</a></dd>
+                <dt><b>歌曲欣賞</b></dt>
+                <dd><a href="#">玫瑰花的葬禮</a></dd>
+                <dd><a href="#">入夢局</a></dd>
+                <dd><a href="#">琵琶行</a></dd>
+                <dd><a href="#">我等你到三十五歲</a></dd>
+                <dd><a href="#">南山南</a></dd>
+                <dd><a href="#">默讀</a></dd>
+                <dt><b>小說推薦</b></dt>
+                <dd><a href="#">盜墓筆記</a></dd>
+                <dd><a href="#">死亡萬花筒</a></dd>
+                <dd><a href="#">全職高手</a></dd>
+            </dl>
+        </nav>
+
+        <article>
+            <h1>姓名:黃羽溱</h1>
+            <h1>性別:女</h1>
+            <h1>興趣:聽歌、玩遊戲、看小說</h1>
+            <h1>喜歡的歌曲類型:古風</h1>
+            <h1>喜歡玩的遊戲:王者榮耀、和平精英</h1>
+            <h1>喜歡看的小說類型:玄幻、恐怖</h1>
+            <h1>就讀學校:國立金門大學</h1>
+            <h1>科系:資訊工程學系</h1>
+            <h1>信箱:zxczxczxcasdbrian123@gmail.com</h1>
+
+        </article>
+    </section>
+
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+
+</html>

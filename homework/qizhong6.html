@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url("http://www.bizhi360.com/allimg/bpic/14/5314.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Style the header */
+        
+        header {
+            background-color: hsla(277, 82%, 4%, 0.8);
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            font-family: "DFKai-sb";
+        }
+        /* Create two columns/boxes that floats next to each other */
+        
+        nav {
+            float: left;
+            width: 15%;
+            height: 800px;
+            /* only for demonstration, should be removed */
+            background: hsla(260, 18%, 93%, 0.6);
+            padding: 20px;
+        }
+        /* Style the list inside the menu */
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            float: left;
+            padding: 50px;
+            width: 85%;
+            height: 800px;
+            background-color: hsla(260, 18%, 93%, 0.8);
+            /* only for demonstration, should be removed */
+        }
+        /* Clear floats after the columns */
+        
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Style the footer */
+        
+        footer {
+            background-color: hsla(277, 82%, 4%, 0.6);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header>
+        <h2>夜柳的個人網頁</h2>
+    </header>
+
+    <section>
+        <nav>
+            <dl>
+                <dt><b>自我介紹</b></dt>
+                <dd><a href="#">簡介</a></dd>
+                <dt><b>歌曲欣賞</b></dt>
+                <dd><a href="#">玫瑰花的葬禮</a></dd>
+                <dd><a href="#">入夢局</a></dd>
+                <dd><a href="#">琵琶行</a></dd>
+                <dd><a href="#">我等你到三十五歲</a></dd>
+                <dd><a href="#">南山南</a></dd>
+                <dd><a href="#">默讀</a></dd>
+                <dt><b>小說推薦</b></dt>
+                <dd><a href="#">盜墓筆記</a></dd>
+                <dd><a href="#">死亡萬花筒</a></dd>
+                <dd><a href="#">全職高手</a></dd>
+            </dl>
+        </nav>
+
+        <article>
+            <h1><a href=https://www.youtube.com/watch?v=g3NXcBmLZgw>我等你到三十五歲</a></h1>
+            <p>原曲：風聲</p>
+            <p>後期：喵汪 </p>
+            <p>翻唱：晃兒</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g3NXcBmLZgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>一首詞很壓抑、聽了讓我想哭的歌...歌的故事就是說有一對讀大學的男同性戀情侶，其中一人因為承受不住家裡和社會</p>
+            <p>給他的壓力而找了一名女性結婚了，可另一人卻始終相信他會回來找自己，並說自己願意等他到三十五歲，然而最後卻疑似因</p>
+            <p>得了抑鬱症，28歲時投江自殺了，並留下了這麼一句話: </p>
+            <p> "這樣，我就能一直等著你了吧"</p>
+        </article>
+    </section>
+
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+
+</html>
